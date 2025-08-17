@@ -13,21 +13,9 @@
     <link rel="icon" sizes="512x512" href="graphics/favicon/android-chrome-512x512.png">
     
     <title>Moses Peace Foundation</title>
-    <link rel="stylesheet" href="carousel.css">
-    <link rel="stylesheet" href="stackedcard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
     <style>
       :root {
         --primary: #fff5f8;
@@ -204,8 +192,6 @@
       header p {
         font-size: 1.2rem;
         margin-top: 0.5rem;
-        color: #848696;
-        font-family:  sans-serif;
       }
 
       .section {
@@ -215,24 +201,13 @@
       }
       
       .section h2 {
-        font-family: 'Playfair Display', sans-serif;
+        font-family: 'Playfair Display', serif;
         font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
         color: var(--accent);
       }
-      /* 🔍 Mobile Styling */
-      @media (max-width: 768px) {
-        .section h2{
-          font-size: 1.6rem;
-          text-align: center;
-        }
-        .section p {
-          font-size: 1rem;
-          text-align: center;
-        }
-      }
-      
+
       .section2 {
         padding: 4rem 1.5rem;
         max-width: 1000px;
@@ -240,8 +215,7 @@
       }
       
       .section2 h2 {
-        font-family: 'Playfair Display', sans-serif;
-        color: #848696;;
+        font-family: 'Playfair Display', serif;
         font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
@@ -350,16 +324,15 @@
       .impact-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 0.5rem;
-        margin-top: 0.5rem;
+        gap: 1.5rem;
+        margin-top: 2rem;
         text-align: center;
       }
 
       .impact-item {
         background: white;
         padding: 1.2rem;
-        margin-top: -4rem;
-        border-radius: 0px;
+        border-radius: 10px;
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
         transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
@@ -386,9 +359,7 @@
       .impact-item p {
         font-size: 0.9rem;
         font-weight: 500;
-        color: #848696;
-        font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
-          
+        color: #444;
       }
 
       .contact-form input, .contact-form textarea {
@@ -627,30 +598,13 @@
         .member-info p {
           font-size: 0.9rem;
         }
-        .impact-grid {
-          grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-          gap: 0.1rem;
-          margin-top: 2rem;
-          text-align: center;
-        }
-          .impact-item {
-          background: white;
-          padding: 1.2rem;
-          margin-top: -4rem;
-          border-radius: 0px;
-          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-          transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
+
         .impact-item .count {
-          font-size: 1.1rem;
+          font-size: 1.4rem;
         }
-        .impact-item p {
-          font-size: 0.7rem;
-          color: #848696;
-          font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
-        }
+
         .impact-item i {
-          font-size: 1.2rem;
+          font-size: 1.6rem;
         }
 
         .custom-footer {
@@ -789,112 +743,52 @@
       </div>
     </header>
 
-    <!-- counter session -->
-    <section id="impact" class="section">
-      <div class="impact-grid">
-        <div class="impact-item">
-          <i class="fas fa-heart"></i>
-          <div class="count" data-target="5">0</div>
-          <p>Missions</p>
-        </div>
-        <div class="impact-item">
-          <i class="fas fa-calendar-day"></i>
-          <div class="count" data-target="3">0</div>
-          <p>Events</p>
-        </div>
-        <div class="impact-item">
-          <i class="fas fa-hands-helping"></i>
-          <div class="count" data-target="5">0</div>
-          <p>Partners</p>
-        </div>
-    <!--<div class="impact-item">
-          <i class="fas fa-handshake"></i>
-          <div class="count" data-target="4">0</div>
-          <p>Partners</p>
-        </div> -->
-    <!--<div class="impact-item">
-          <i class="fas fa-podcast"></i>
-          <div class="count" data-target="20">0</div>
-          <p>Podcast Episodes</p>
-        </div> -->
-    <!--<div class="impact-item">
-          <i class="fas fa-chalkboard-teacher"></i>
-          <div class="count" data-target="8">0</div>
-          <p>School Visits</p>
-        </div> ABOUT -->
-      </div>
-    </section>
-
     <!-- ABOUT -->
-    <section id="about" class="section fade-up" style="margin-top: -5%;">
+    <section id="about" class="section fade-up">
       <h2>About the Foundation</h2>
-      <p class="carousel-member-bio" style="text-align: center; margin-top: -5;">
+      <p style="text-align: center; max-width: 800px; margin: auto;">
         Moses Peace Foundation exists to restore wholeness, dignity, and hope to young girls and women. We are committed to creating safe spaces of healing, love, and empowerment, so every woman can rise into her full, peaceful self.<br/>
         <em>2 Corinthians 4:8-10</em>
       </p>
     </section>
 
-    <!-- Team -->
-    <section id="team" class="section fade-up">
-      <h2>Founders & Team</h2>
-      <div class="carousel-container">
-        <button class="carousel-nav-arrow left">‹</button>
-        <div class="carousel-track">
-          <div class="carousel-card" data-index="0">
-            <img src="graphics/Moses Peace3.JPG" alt="Moses Peace 1"> 
-          </div>
-          <div class="carousel-card" data-index="1">
-            <img src="graphics\Debby Moses.jpg" alt="Debby Moses">
-          </div>
-          <div class="carousel-card" data-index="2">
-            <img src="graphics\Chioma Esther Okafor.jpg" alt="Chioma Esther Okafor">
-          </div>
-          <div class="carousel-card" data-index="3">
-            <img src="graphics/Moses Peace3.JPG" alt="Moses Peace3">
-          </div>
-          <div class="carousel-card" data-index="4">
-            <img src="graphics\samuel okoh.jpg" alt="samuel okoh">
-          </div>
-          <div class="carousel-card" data-index="5">
-            <img src="graphics\Pst Chioma Rufus.jpg" alt="Pst Chioma Rufus">
-          </div>
+    <section id="impact" class="section fade-up">
+      <h2>Our Impact So Far</h2>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <i class="fas fa-heart"></i>
+          <div class="count" data-target="500">0</div>
+          <p>Lives Touched</p>
         </div>
-        <button class="carousel-nav-arrow right">›</button>
-      </div>
-
-      <div class="carousel-member-info">
-        <h2 class="carousel-member-name" style="font-size: 21px;">Moses Peace</h2>
-        <p class="carousel-member-role">Founder</p>
-        <p class="bio-text carousel-member-bio">
-          <span class="short">
-            Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with...
-          </span>
-          <span class="full" style="display:none;">
-            Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with a strong grasp of the social media landscape. She is the host of Peaceful’s Corner, a podcast dedicated to honest conversations around healing, growth, and emotional well-being. The Moses Peace Foundation is her way of giving back,a personal response to a journey she has lived through. Through it, she creates safe spaces for emotional healing, especially for women and girls navigating pain and brokenness.
-          </span>
-          <a href="#" class="toggle-bio">Read more</a>
-        </p>
-        <div class="carousel-member-social-icons">
-          <a href="https://www.facebook.com/share/1Eyyw5fQwV/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/iam_mosespeace" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/iam_mosespeace?s=21" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.youtube.com/@Peacefuls_Corner" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="impact-item">
+          <i class="fas fa-calendar-day"></i>
+          <div class="count" data-target="15">0</div>
+          <p>Events</p>
         </div>
-
+        <div class="impact-item">
+          <i class="fas fa-hands-helping"></i>
+          <div class="count" data-target="10">0</div>
+          <p>Missions</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-handshake"></i>
+          <div class="count" data-target="4">0</div>
+          <p>Partners</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-podcast"></i>
+          <div class="count" data-target="20">0</div>
+          <p>Podcast Episodes</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <div class="count" data-target="8">0</div>
+          <p>School Visits</p>
+        </div>
       </div>
-
-      <div class="carousel-dots">
-        <div class="carousel-dot active" data-index="0"></div>
-        <div class="carousel-dot" data-index="1"></div>
-        <div class="carousel-dot" data-index="2"></div>
-        <div class="carousel-dot" data-index="3"></div>
-        <div class="carousel-dot" data-index="4"></div>
-        <div class="carousel-dot" data-index="5"></div>
-      </div>
-        <script src="carousel.js"> </script>
     </section>
 
-    <!-- TEAM --
+    <!-- TEAM -->
     <section id="team" class="section fade-up">
       <h2>Founders & Team</h2>
       <div class="team-member">
@@ -984,7 +878,7 @@
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
 
     <!-- Team Gallery -->
     <section id="mpf-gallery" class="section2 fade-up">
@@ -1034,60 +928,6 @@
         </div>
       </div>
     </section>
-
-    <!-- VISION, MISSION & OBJECTIVES 
-    <section class="carousel-container">
-      <div class="stack-area">
-        <div class="left">
-            <div class="sub-title">
-              <div class="stackedcards1">
-              <i class="fas fa-eye fa-2x" style="color: #e91e63;; margin-bottom: 1rem;"></i>
-              <h3>Vision</h3>
-              <i class="fas fa-hand-holding-heart fa-2x" style="color: #e91e63;; margin-bottom: 1rem;"></i>
-              <h3>Mission</h3>
-              <i class="fas fa-bullseye fa-2x" style="color: #e91e63;; margin-bottom: 1rem;"></i>
-              <h3>Objectives</h3>
-              </div>
-            </div>
-        </div>
-        <div class="right">
-          <div class="stackedcard">
-              <div class="card-heading">
-                  <i class="fas fa-eye"></i>
-                  <h3>Vision</h3>
-              </div>
-              <div class="content">A world where every wounded girl and woman becomes whole — healed, seen, and empowered to thrive.</div>
-          </div>
-          <div class="stackedcard">
-              <div class="card-heading">
-                  <i class="fas fa-hand-holding-heart"></i>
-                  <h3>Mission</h3>
-              </div>
-              <div class="content">We create safe spaces of healing, love, and empowerment, restoring wholeness, dignity, and hope to girls and women.</div>
-          </div>
-          <div class="stackedcard">
-              <div class="card-heading">
-                  <i class="fas fa-bullseye"></i>
-                  <h3>Objectives</h3>
-              </div>
-              <div class="content"><ul style="text-align: left; margin-top: 1rem;">
-                      <li>Holistic programs for healing & faith</li>
-                      <li>Mentorship circles & safe havens</li>
-                      <li>Events, retreats & workshops</li>
-                      <li>Outreach & advocacy</li>
-                      <li>Partnerships with schools & communities</li>
-                      <li>Storytelling & creative platforms</li>
-                  </ul>
-              </div>
-          </div>
-      <!--<div class="stackedcard"> //Fourth card
-            <div class="sub">Objectives</div>
-            <div class="content">Empower the girl child</div>
-          </div> --
-        </div>
-      </div>
-    </section> -->
-    <script src="stackedcard.js"></script>
 
     <!-- upcoming events -->
     <!-- <section id="instagram" class="section fade-up">
