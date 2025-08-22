@@ -13,26 +13,14 @@
     <link rel="icon" sizes="512x512" href="graphics/favicon/android-chrome-512x512.png">
     
     <title>Moses Peace Foundation</title>
-    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="donationbutton.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <style>
       :root {
         --primary: #fff5f8;
         --accent: #e91e63;
-        --text: #848696;
+        --text: #2c1a1d;
         --highlight: #f8b6cb;
         --overlay: rgba(255, 235, 243, 0.9);
       }
@@ -43,16 +31,11 @@
         box-sizing: border-box;
         font-family: 'Inter', sans-serif;
       }
-      * {
-       /* outline: 1px solid red; */
-      }
-
 
       body {
         background: var(--primary);
         color: var(--text);
         overflow-x: hidden;
-        max-width: 100%;
       }
 
       /* Navbar Container */
@@ -164,9 +147,6 @@
         .nav-links {
           display: none;
         }
-        .navbar-logo span{
-          display: none;
-        }
         .hamburger {
           display: block;
         }
@@ -212,79 +192,22 @@
       header p {
         font-size: 1.2rem;
         margin-top: 0.5rem;
-        color: #848696;
-        font-family:  sans-serif;
-      }
-      .impact-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 0.5rem;
-        margin-top: 0.5rem;
-        text-align: center;
       }
 
-      .impact-item {
-        background: white;
-        padding: 1.2rem;
-        margin-top: -4rem;
-        border-radius: 0px;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-      }
-
-      .impact-item:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-      }
-
-      .impact-item i {
-        font-size: 1.8rem;
-        color: var(--accent);
-        margin-bottom: 0.3rem;
-      }
-
-      .impact-item .count {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: var(--accent);
-        margin-bottom: 0.3rem;
-        font-family: 'Playfair Display', serif;
-      }
-
-      .impact-item p {
-        font-size: 0.9rem;
-        font-weight: 500;
-        color: #848696;
-        font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
-          
-      }
-      
       .section {
         padding: 4rem 1.5rem;
         max-width: 1000px;
         margin: auto;
       }
+      
       .section h2 {
-        font-family: 'Playfair Display', sans-serif;
+        font-family: 'Playfair Display', serif;
         font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
         color: var(--accent);
       }
-      
-      /* 🔍 Mobile Styling */
-      @media (max-width: 768px) {
-        .section h2{
-          font-size: 1.6rem;
-          text-align: center;
-        }
-        .section p {
-          font-size: 0.8rem;
-          text-align: center;
-        }
-      }
-      
-        /* Used for team image container */
+
       .section2 {
         padding: 4rem 1.5rem;
         max-width: 1000px;
@@ -292,45 +215,21 @@
       }
       
       .section2 h2 {
-        font-family: 'Playfair Display', sans-serif;
-        color: #848696;
+        font-family: 'Playfair Display', serif;
         font-size: 2rem;
         text-align: center;
         margin-bottom: 2rem;
         color: var(--accent);
       }
-      .section3 {
-        padding: 4rem 1.5rem;
-        max-width: 1000px;
-        margin: auto;
-      }
 
-      .about-adjust {
-        padding-top: 0.01rem;   /* give breathing space at the top */
-        padding-bottom: 1rem; /* consistent bottom spacing */
-        margin-top: 0;       /* reset any negative margins */
-        color: #848696;
-        font-size: 1rem;
-        font-weight: 500;
-        opacity: 0.8;
-        text-transform: ;
-        letter-spacing: 0.01em;
-        position: relative;
-      }
-      .about-adjust p{
-        text-align: center;
-      }
-      
       .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2rem;
-        width: 100%;
-        max-width: 1000px;
       }
 
       .card {
-        background: rgb(255, 255, 255);
+        background: white;
         padding: 2rem;
         border-radius: 10px;
         box-shadow: 0 4px 16px rgba(0,0,0,0.08);
@@ -420,6 +319,47 @@
 
       .bio-text .full {
         transition: all 0.3s ease;
+      }
+
+      .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .impact-item {
+        background: white;
+        padding: 1.2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .impact-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      }
+
+      .impact-item i {
+        font-size: 1.8rem;
+        color: var(--accent);
+        margin-bottom: 0.3rem;
+      }
+
+      .impact-item .count {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--accent);
+        margin-bottom: 0.3rem;
+        font-family: 'Playfair Display', serif;
+      }
+
+      .impact-item p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #444;
       }
 
       .contact-form input, .contact-form textarea {
@@ -514,7 +454,7 @@
 
       .footer-top {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 2rem;
         max-width: 1200px;
         margin: auto;
@@ -658,30 +598,13 @@
         .member-info p {
           font-size: 0.9rem;
         }
-        .impact-grid {
-          grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-          gap: 0.1rem;
-          padding-top: 0rem;
-          margin-top: 1.5rem;
-          text-align: center;
-        }
-          .impact-item {
-          background: white;
-          padding: 1.2rem;
-          border-radius: 0px;
-          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-          transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
+
         .impact-item .count {
-          font-size: 1.1rem;
+          font-size: 1.4rem;
         }
-        .impact-item p {
-          font-size: 0.7rem;
-          color: #848696;
-          font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
-        }
+
         .impact-item i {
-          font-size: 1.2rem;
+          font-size: 1.6rem;
         }
 
         .custom-footer {
@@ -712,22 +635,19 @@
       .whatsapp-btn:hover {
         background: #00d18c;
       }
-      /* =========================
-        MPF Rotating Gallery
-      ========================= */
       #mpf-gallery {
         overflow: hidden;
-        text-align: center;
+        text-align: center; /* helps center inline elements */
       }
 
       .image-container {
         position: relative;
-        width: 180px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
         margin: auto;
         transform-style: preserve-3d;
         transform: perspective(1000px) rotateY(0deg);
-        transition: transform 0.7s ease-in-out;
+        transition: transform 0.7s;
       }
 
       .image-container span {
@@ -741,99 +661,30 @@
       .image-container span img {
         width: 100%;
         height: 100%;
-        border-radius: 15px;
-        border: 3px solid #fff;
+        border-radius: 50%; /* make circular */
+        border: 3px solid white; /* white border */
         object-fit: cover;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-      /*object-fit: contain; /* ✅ shows full image */
-      /*background: #000; /* optional: fill gaps */
-      }
-      /* =========================
-        Responsive Tweaks
-      ========================= */
-
-      /* Tablets */
-      @media (max-width: 768px) {
-        .image-container {
-          width: 180px;
-          height: 180px;
-        }
-        .image-container span {
-          transform: rotateY(calc(var(--i) * 45deg)) translateZ(280px);
-        }
       }
 
-      /* Mobile */
-      @media (max-width: 480px) {
-        .image-container {
-          width: 140px;
-          height: 140px;
-        }
-        .image-container span {
-          transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
-        }
-      }
-
-      /* Very Small phones */
-      @media (max-width: 320px) {
-        .image-container {
-          width: 110px;
-          height: 110px;
-        }
-        .image-container span {
-          transform: rotateY(calc(var(--i) * 45deg)) translateZ(150px);
-        }
-      }
-
-      /* Buttons */
       .btn-container {
         position: relative;
-        margin-top: 60px;
+        margin-top: 100px;
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 20px; /* space between buttons */
       }
 
       .btn {
         background: var(--accent);
         color: #fff;
         border: none;
-        margin-top: 40px;
         padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 1rem;
       }
 
       .btn:hover {
         filter: brightness(1.5);
-      }
-
-      /* Tablet Buttons */
-      @media (max-width: 768px) {
-        .btn {
-          margin-top: 40px;
-          padding: 8px 16px;
-          font-size: 0.9rem;
-        }
-      }
-
-      /* Mobile Buttons */
-      @media (max-width: 480px) {
-        .btn {
-          margin-top: 40px;
-          padding: 6px 14px;
-          font-size: 0.8rem;
-        }
-      }
-
-      /* Mobile Buttons */
-      @media (max-width: 320px) {
-        .btn {
-          margin-top: 10px;
-          padding: 4px 12px;
-          font-size: 0.6rem;
-        }
       }
 
       
@@ -847,7 +698,7 @@
       <div class="navbar-container">
         <!-- Logo -->
         <div class="navbar-logo">
-          <a href="#"><img src="graphics/InShot_20250718_014018133.jpg" alt="Moses Peace Foundation" /></a>
+          <img src="graphics/InShot_20250718_014018133.jpg" alt="Moses Peace Foundation" />
           <span>Moses Peace Foundation</span>
         </div>
 
@@ -892,104 +743,52 @@
       </div>
     </header>
 
-    <!-- counter session -->
-    <section id="impact" class="section">
-      <div class="impact-grid">
-        <div class="impact-item">
-          <i class="fas fa-heart"></i>
-          <div class="count" data-target="5">0</div>
-          <p>Missions</p>
-        </div>
-        <div class="impact-item">
-          <i class="fas fa-calendar-day"></i>
-          <div class="count" data-target="3">0</div>
-          <p>Events</p>
-        </div>
-        <div class="impact-item">
-          <i class="fas fa-hands-helping"></i>
-          <div class="count" data-target="5">0</div>
-          <p>Partners</p>
-        </div>
-    <!--<div class="impact-item">
-          <i class="fas fa-handshake"></i>
-          <div class="count" data-target="4">0</div>
-          <p>Partners</p>
-        </div> -->
-    <!--<div class="impact-item">
-          <i class="fas fa-podcast"></i>
-          <div class="count" data-target="20">0</div>
-          <p>Podcast Episodes</p>
-        </div> -->
-    <!--<div class="impact-item">
-          <i class="fas fa-chalkboard-teacher"></i>
-          <div class="count" data-target="8">0</div>
-          <p>School Visits</p>
-        </div> ABOUT -->
-      </div>
-    </section>
-
     <!-- ABOUT -->
-    <section id="about" class="section about-adjust fade-up">
+    <section id="about" class="section fade-up">
       <h2>About the Foundation</h2>
-      <p>
+      <p style="text-align: center; max-width: 800px; margin: auto;">
         Moses Peace Foundation exists to restore wholeness, dignity, and hope to young girls and women. We are committed to creating safe spaces of healing, love, and empowerment, so every woman can rise into her full, peaceful self.<br/>
         <em>2 Corinthians 4:8-10</em>
       </p>
     </section>
 
-    <!-- Team -->
-    <section id="team" class="section fade-up">
-      <h2>Founders & Team</h2>
-
-      <div class="carousel-container">
-        <button class="carousel-nav-arrow left">‹</button>
-        <div class="carousel-track">
-          <div class="carousel-card" data-index="0">
-            <img src="graphics/Moses Peace3.JPG" alt="Moses Peace">
-          </div>
-          <div class="carousel-card" data-index="1">
-            <img src="graphics/Debby Moses.jpg" alt="Debby Moses">
-          </div>
-          <div class="carousel-card" data-index="2">
-            <img src="graphics/Chioma Esther Okafor.jpg" alt="Chioma Esther Okafor">
-          </div>
-          <div class="carousel-card" data-index="3">
-            <img src="graphics/Moses Peace3.JPG" alt="Pst Moses Peace">
-          </div>
-          <div class="carousel-card" data-index="4">
-            <img src="graphics/Pst Chioma Rufus.jpg" alt="Pst Chioma Rufus">
-          </div>
+    <section id="impact" class="section fade-up">
+      <h2>Our Impact So Far</h2>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <i class="fas fa-heart"></i>
+          <div class="count" data-target="500">0</div>
+          <p>Lives Touched</p>
         </div>
-        <button class="carousel-nav-arrow right">›</button>
+        <div class="impact-item">
+          <i class="fas fa-calendar-day"></i>
+          <div class="count" data-target="15">0</div>
+          <p>Events</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-hands-helping"></i>
+          <div class="count" data-target="10">0</div>
+          <p>Missions</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-handshake"></i>
+          <div class="count" data-target="4">0</div>
+          <p>Partners</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-podcast"></i>
+          <div class="count" data-target="20">0</div>
+          <p>Podcast Episodes</p>
+        </div>
+        <div class="impact-item">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <div class="count" data-target="8">0</div>
+          <p>School Visits</p>
+        </div>
       </div>
-
-      <!-- Member Info (dynamic) from carousel javascript-->
-      <div class="carousel-member-info">
-        <h2 class="carousel-member-name" style="font-size: 21px;"></h2>
-        <p class="carousel-member-role"></p>
-
-        <p class="bio-text carousel-member-bio">
-          <span class="short"></span>
-          <span class="full" style="display:none;"></span>
-          <a href="#" class="toggle-bio" style="color: #f8b6cb;">Read more</a>
-        </p>
-
-        <div class="carousel-member-social-icons"></div>
-      </div>
-
-      <!-- Dots -->
-      <div class="carousel-dots">
-        <div class="carousel-dot" data-index="0"></div>
-        <div class="carousel-dot" data-index="1"></div>
-        <div class="carousel-dot" data-index="2"></div>
-        <div class="carousel-dot" data-index="3"></div>
-      </div>
-
-      <script src="carousel.js"></script>
     </section>
 
-
-    <!-- TEAM --
+    <!-- TEAM -->
     <section id="team" class="section fade-up">
       <h2>Founders & Team</h2>
       <div class="team-member">
@@ -1079,23 +878,19 @@
           </div>
         </div>
       </div>
-    </section>-->
-
-    <!--Program-->
-    <section class="section fade-up">
-      <h2>Programme</h2>
-      <h3 style="text-align: center; color: #f8b6cb;">beneath the flyover</h3>
     </section>
-    <section id="mpf-gallery" class="section3 fade-up">
+
+    <!-- Team Gallery -->
+    <section id="mpf-gallery" class="section2 fade-up">
       <div class="image-container">
-        <span style="--i: 1"><img src="graphics\beneath the flyover picture1.jpg" alt="Moses Peace foundation founders" /></span>
-        <span style="--i: 2"><img src="graphics\beneath the flyover picture2.jpg" alt="Moses Peace foundation founders" /></span>
-        <span style="--i: 3"><img src="graphics\beneath the flyover picture3.jpg" alt="Moses Peace foundation founders" /></span>
-        <span style="--i: 4"><img src="graphics\beneath the flyover picture4.jpg" alt="Moses Peace foundation founders" /></span>
-        <span style="--i: 5"><img src="graphics\crew.jpg" alt="Moses Peace foundation founders" /></span>
-        <span style="--i: 6"><img src="graphics\crew3.jpg" alt="Moses Peace foundation founders" /></span>
-        <span style="--i: 7"><img src="graphics\crew2.jpg" alt="Moses Peace foundation founders" /></span>
-        <span style="--i: 8"><img src="graphics\Beneath The Flyover Beneath the Heart3.png" alt="Moses Peace foundation founders" /></span>
+        <span style="--i: 1"><img src="graphics\crew.jpg" alt="founders" /></span>
+        <span style="--i: 2"><img src="graphics\crew2.jpg" alt="founders" /></span>
+        <span style="--i: 3"><img src="graphics\crew3.jpg" alt="founders" /></span>
+        <span style="--i: 4"><img src="graphics\crew.jpg" alt="founders" /></span>
+        <span style="--i: 5"><img src="graphics\crew2.jpg" alt="founders" /></span>
+        <span style="--i: 6"><img src="graphics\crew3.jpg" alt="founders" /></span>
+        <span style="--i: 7"><img src="graphics\crew.jpg" alt="founders" /></span>
+        <span style="--i: 8"><img src="graphics\crew2.jpg" alt="founders" /></span>
       </div>
 
       <div class="btn-container">
@@ -1134,59 +929,6 @@
       </div>
     </section>
 
-    <!-- VISION, MISSION & OBJECTIVES 
-    <section class="carousel-container">
-      <div class="stack-area">
-        <div class="left">
-            <div class="sub-title">
-              <div class="stackedcards1">
-              <i class="fas fa-eye fa-2x" style="color: #e91e63;; margin-bottom: 1rem;"></i>
-              <h3>Vision</h3>
-              <i class="fas fa-hand-holding-heart fa-2x" style="color: #e91e63;; margin-bottom: 1rem;"></i>
-              <h3>Mission</h3>
-              <i class="fas fa-bullseye fa-2x" style="color: #e91e63;; margin-bottom: 1rem;"></i>
-              <h3>Objectives</h3>
-              </div>
-            </div>
-        </div>
-        <div class="right">
-          <div class="stackedcard">
-              <div class="card-heading">
-                  <i class="fas fa-eye"></i>
-                  <h3>Vision</h3>
-              </div>
-              <div class="content">A world where every wounded girl and woman becomes whole — healed, seen, and empowered to thrive.</div>
-          </div>
-          <div class="stackedcard">
-              <div class="card-heading">
-                  <i class="fas fa-hand-holding-heart"></i>
-                  <h3>Mission</h3>
-              </div>
-              <div class="content">We create safe spaces of healing, love, and empowerment, restoring wholeness, dignity, and hope to girls and women.</div>
-          </div>
-          <div class="stackedcard">
-              <div class="card-heading">
-                  <i class="fas fa-bullseye"></i>
-                  <h3>Objectives</h3>
-              </div>
-              <div class="content"><ul style="text-align: left; margin-top: 1rem;">
-                      <li>Holistic programs for healing & faith</li>
-                      <li>Mentorship circles & safe havens</li>
-                      <li>Events, retreats & workshops</li>
-                      <li>Outreach & advocacy</li>
-                      <li>Partnerships with schools & communities</li>
-                      <li>Storytelling & creative platforms</li>
-                  </ul>
-              </div>
-          </div>
-      <!--<div class="stackedcard"> //Fourth card
-            <div class="sub">Objectives</div>
-            <div class="content">Empower the girl child</div>
-          </div> --
-        </div>
-      </div>
-    </section> -->
-
     <!-- upcoming events -->
     <!-- <section id="instagram" class="section fade-up">
       <h2>Upcoming Event</h2>
@@ -1195,38 +937,26 @@
       </div>
     </section> -->
 
-    
     <!-- DONATION -->
     <section id="donate" class="section fade-up">
       <h2>Support Our Mission</h2>
       <p style="text-align: center; max-width: 800px; margin: auto;">
-        Your donations help us create safe spaces for healing, empowerment, and purpose-driven living. Every seed counts. 
+        Your donations help us create safe spaces for healing, empowerment, and purpose-driven living. Every seed counts. 💕
       </p>
       <div style="text-align: center; margin-top: 2rem;">
-        <a href="https://wa.me/message/O26O6EUOWX32O1" target="_blank" style="color: white">
-          <button class="animated-button">
-            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
-            <span class="text">Donate</span>
-            <span class="circle"></span>
-            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
-          </button>
+        <a href="https://wa.me/message/O26O6EUOWX32O1" target="_blank" style="background: var(--accent); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
+          🤝 Sponsor or Donate
         </a>
       </div>
     </section>
+
 
     <!-- PROJECTS -->
     <section id="projects" class="section fade-up">
       <h2>Programs & Initiatives</h2>
       <div class="cards">
         <div class="card hover-lift">
-          <a href="https://youtube.com/@peacefuls_corner?si=ASSd2XkSVQRHvgD0" target="_blank" style="color: var(--accent); font-weight: bold;"><img src="graphics\peacefuls corner.jpg" alt="moses peace foundation Podcast" /></a>
+          <a href="https://youtube.com/@peacefuls_corner?si=ASSd2XkSVQRHvgD0" target="_blank" style="color: var(--accent); font-weight: bold;"><img src="graphics\peacefuls corner.jpg" alt="Podcast" /></a>
           <h3><a href="https://youtube.com/@peacefuls_corner?si=ASSd2XkSVQRHvgD0" target="_blank" style="color: var(--accent); font-weight: bold;">@Peaceful's Corner Podcast</a></h3>
           <p>A corner of peace for the women becoming whole</p>
           <p>Stories of healing, faith, and transformation through honest conversations.</p>
@@ -1239,7 +969,7 @@
       </div>
     </section>
     
-    <!-- EVENTS
+    <!-- EVENTS -->
     <section id="events" class="section fade-up">
       <h2>Featured Events</h2>
       <div class="slider-container">
@@ -1263,7 +993,7 @@
         </div>
         <button class="slider-btn next" onclick="scrollSlider(1)">❯</button>
       </div>
-    </section>  -->
+    </section>
 
     <!-- GALLERY -->
     <section id="gallery" class="section fade-up">
@@ -1274,8 +1004,7 @@
           <p>Empowering women through faith and counseling.</p>
         </div>
         <div class="card hover-lift">
-          <img src="graphics\beneath the flyover picture5.jpg" alt="Gallery 3">
-      <!--<img src="https://www.togetherforgirls.org/_next/image?url=https%3A%2F%2Fcdn.togetherforgirls.org%2Fassets%2Fimages%2FLVCT-DREAMS-Kenya-march.JPG%3Fv%3D2023-11-09T17%3A35%3A23%2B00%3A00&w=1920&q=75" alt="Gallery 3">-->
+          <img src="https://www.togetherforgirls.org/_next/image?url=https%3A%2F%2Fcdn.togetherforgirls.org%2Fassets%2Fimages%2FLVCT-DREAMS-Kenya-march.JPG%3Fv%3D2023-11-09T17%3A35%3A23%2B00%3A00&w=1920&q=75" alt="Gallery 3">
           <p>Peace walk through the city — spreading light and love.</p>
         </div>
       </div>
@@ -1447,7 +1176,6 @@
 
       window.addEventListener("scroll", activateNavOnScroll);
     </script>
-    <!-- // toogle bio 
     <script>
       document.querySelectorAll('.toggle-bio').forEach((toggle) => {
         toggle.addEventListener('click', (e) => {
@@ -1463,7 +1191,7 @@
           toggle.textContent = isExpanded ? 'Read more' : 'Show less';
         });
       });
-    </script>-->
+    </script>
 
     <script>
       const counters = document.querySelectorAll('.count');
@@ -1513,7 +1241,7 @@
         });
       });
     </script>
-   <!-- // rotating image gallery -->
+    // rotating image gallery
     <script>
       const imageContainer = document.querySelector("#mpf-gallery .image-container");
       const prevBtn = document.getElementById("prev");
