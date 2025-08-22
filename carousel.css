@@ -30,6 +30,7 @@
   position: relative;
   perspective: 1000px;
   margin: 0 auto;              /* keep centered within section */
+  overflow: hidden;
 }
 
 .carousel-track {
@@ -273,65 +274,40 @@
   .carousel-card.right-2 { transform: translateX(140px)  scale(0.7)  translateZ(-150px); }
   .carousel-member-name::before,
   .carousel-member-name::after {
-    content: "";
-    position: absolute;
-    top: 60%;
-    width: 50px;
-    height: 2px;
-    background: rgb(8, 42, 123);
-    }
-    .carousel-member-name::before { left: -80px; }
-    .carousel-member-name::after  { right: -80px; }
+    display: none; /* remove the horizontal lines on small screens */
+  }
 }
 
+  /* Very small phones */
 /* Very small phones */
 @media (max-width: 320px) {
   .carousel-container {
-    height: 220px;
-    perspective: 500px;
+    height: 200px;      /* slightly shorter to reduce overflow */
+    perspective: 400px; /* reduce perspective for small screens */
   }
-  .carousel-card {
-    width: 150px;
-    height: 180px;
-  }
-  /* Very small phones */
-@media (max-width: 320px) {
-  .carousel-container {
-    height: 220px;
-    perspective: 500px;
-  }
-  .carousel-card {
-    width: 150px;
-    height: 180px;
-  }
-  .carousel-card.left-2  { transform: translateX(-100px) scale(0.65) translateZ(-120px); }
-  .carousel-card.left-1  { transform: translateX(-50px)  scale(0.75) translateZ(-50px);  }
-  .carousel-card.right-1 { transform: translateX(50px)   scale(0.75) translateZ(-50px);  }
-  .carousel-card.right-2 { transform: translateX(100px)  scale(0.65) translateZ(-120px); }
-  .carousel-member-name::before,
-  .carousel-member-name::after {
-    content: "";
-    position: absolute;
-    top: 60%;
-    width: 30px;
-    height: 2px;
-    background: rgb(8, 42, 123);
-  }
-  .carousel-member-name::before { left: -30px; }
-  .carousel-member-name::after  { right: -30px; }
-}
 
+  .carousel-card {
+    width: 120px;       /* smaller card width */
+    height: 160px;      /* smaller card height */
+  }
+
+  .carousel-card.left-2  { transform: translateX(-70px) scale(0.6) translateZ(-100px); opacity: 0.6; }
+  .carousel-card.left-1  { transform: translateX(-40px) scale(0.7) translateZ(-50px); opacity: 0.8; }
+  .carousel-card.right-1 { transform: translateX(40px)  scale(0.7) translateZ(-50px); opacity: 0.8; }
+  .carousel-card.right-2 { transform: translateX(70px)  scale(0.6) translateZ(-100px); opacity: 0.6; }
+
+  .carousel-card.center {
+    transform: scale(1) translateZ(0); /* reduce scale slightly to prevent overflow */
+    z-index: 10;
+  }
+
+  /* Member name lines adjustments */
   .carousel-member-name::before,
   .carousel-member-name::after {
-    content: "";
-    position: absolute;
-    top: 60%;
-    width: 30px;
-    height: 2px;
-    background: rgb(8, 42, 123);
-    }
-    .carousel-member-name::before { left: -30px; }
-    .carousel-member-name::after  { right: -30px; }
+    width: 20px;
+    left: -20px;
+    right: -20px;
+  }
 }
 
 /* Reduced motion preference */
