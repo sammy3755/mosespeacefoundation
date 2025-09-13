@@ -30,38 +30,38 @@ const teamMembers = [
       youtube: "#"
     }
   },
-  {
-    name: "Chioma Esther Okafor",
-    role: "Project Coordinator",
-    bio: {
-      short:
-        "Chioma Esther Okafor is the Project Coordinator of our foundation. She oversees the planning, execution...",
-      full:
-        "Chioma Esther Okafor is the Project Coordinator of our foundation. She oversees the planning, execution, and follow-up of our projects, ensuring every detail is handled with care and precision. Chioma works closely with the team and community partners to keep our initiatives on schedule and aligned with our mission. Her commitment, coordination skills, and passion for impact help bring each project to life from start to finish."
-    },
-    socials: {
-      facebook: "https://www.facebook.com/share/1AqWTWzea4/?mibextid=wwXIfr",
-      instagram: "https://www.instagram.com/chi__oma_okafor?igsh=MTRxdHprYzNmamVoNA==",
-      twitter: "#",
-      youtube: "#"
-    }
-  },
-    {
-    name: "Moses Peace",
-    role: "Founder & Visionary",
-    bio: {
-      short:
-        "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with...",
-      full:
-        "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with a strong grasp of the social media landscape. She is the host of Peaceful’s Corner, a podcast dedicated to honest conversations around healing, growth, and emotional well-being. The Moses Peace Foundation is her way of giving back,a personal response to a journey she has lived through. Through it, she creates safe spaces for emotional healing, especially for women and girls navigating pain and brokenness."
-    },
-    socials: {
-      facebook: "https://www.facebook.com/share/1Eyyw5fQwV/?mibextid=wwXIfr",
-      instagram: "https://www.instagram.com/iam_mosespeace",
-      twitter: "https://x.com/iam_mosespeace?s=21",
-      youtube: "https://www.youtube.com/@Peacefuls_Corner"
-    }
-  },
+  //{
+  //  name: "Chioma Esther Okafor",
+    //role: "Project Coordinator",
+    //bio: {
+    //  short:
+    //    "Chioma Esther Okafor is the Project Coordinator of our foundation. She oversees the planning, execution...",
+    //  full:
+     //   "Chioma Esther Okafor is the Project Coordinator of our foundation. She oversees the planning, execution, and follow-up of our projects, ensuring every detail is handled with care and precision. Chioma works closely with the team and community partners to keep our initiatives on schedule and aligned with our mission. Her commitment, coordination skills, and passion for impact help bring each project to life from start to finish."
+   // },
+    //socials: {
+   //   facebook: "https://www.facebook.com/share/1AqWTWzea4/?mibextid=wwXIfr",
+   //   instagram: "https://www.instagram.com/chi__oma_okafor?igsh=MTRxdHprYzNmamVoNA==",
+   //   twitter: "#",
+   //   youtube: "#"
+   // }
+//  },
+  //  {
+    //name: "Moses Peace",
+    //role: "Founder & Visionary",
+    //bio: {
+    //  short:
+     //   "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with...",
+    //  full:
+     //   "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with a strong grasp of the social media landscape. She is the host of Peaceful’s Corner, a podcast dedicated to honest conversations around healing, growth, and emotional well-being. The Moses Peace Foundation is her way of giving back,a personal response to a journey she has lived through. Through it, she creates safe spaces for emotional healing, especially for women and girls navigating pain and brokenness."
+    //},
+    //socials: {
+    //  facebook: "https://www.facebook.com/share/1Eyyw5fQwV/?mibextid=wwXIfr",
+    //  instagram: "https://www.instagram.com/iam_mosespeace",
+    //  twitter: "https://x.com/iam_mosespeace?s=21",
+    //  youtube: "https://www.youtube.com/@Peacefuls_Corner"
+   // }
+//  },
   {
     name: "Pst Chioma Rufus",
     role: "Counselor & Mentor",
@@ -104,13 +104,11 @@ function updateCarousel(newIndex) {
   // Handle card positions
   cards.forEach((card, i) => {
     const offset = (i - currentIndex + cards.length) % cards.length;
-    card.classList.remove("center","left-1","left-2","right-1","right-2","hidden");
+    card.classList.remove("center","left-1","right-1","hidden");
 
     if (offset === 0) card.classList.add("center");
     else if (offset === 1) card.classList.add("right-1");
-    else if (offset === 2) card.classList.add("right-2");
     else if (offset === cards.length - 1) card.classList.add("left-1");
-    else if (offset === cards.length - 2) card.classList.add("left-2");
     else card.classList.add("hidden");
   });
 
@@ -135,7 +133,7 @@ function updateCarousel(newIndex) {
 
     memberBioShort.textContent = member.bio.short;
     memberBioFull.textContent = member.bio.full;
-	memberBioShort.style.display = "inline";
+	  memberBioShort.style.display = "inline";
     memberBioFull.style.display = "none";
     toggleBio.textContent = "Read more";
 
