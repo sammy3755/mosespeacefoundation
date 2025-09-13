@@ -1086,8 +1086,72 @@
             background-position: 0% 50%;
           }
         }
+    /* Video Section */
+    .video-section {
+        padding: 4rem 2rem;
+        text-align: center;
+        background: #fff5f8;
+        }
 
-      
+        /* Responsive wrapper */
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 720px;   /* 👈 keeps it nicely sized on desktop */
+        margin: 0 auto 2rem auto;
+        aspect-ratio: 16 / 9; /* modern way to control height */
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+        }
+
+        /* Text below video */
+    .video-text-content {
+        max-width: 700px;
+        margin: 0 auto;
+        }
+
+    .video-title {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: var(--accent);
+        }
+    .video-description {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        color: var(--accent);
+        }
+        /* Responsive tweaks */
+    @media (max-width: 768px) {
+        .video-section {
+            padding: 3rem 1rem;
+        }
+        .video-wrapper {
+            max-width: 100%; /* full width on small screens */
+            border-radius: 12px;
+        }
+        .video-title {
+            font-size: 1.5rem;
+        }
+        .video-description {
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            color: var(--accent);
+        }
+    }
+
+
     </style>
   </head>
   <body>
@@ -1498,7 +1562,30 @@
         <img src="graphics\photo_2025-07-29_14-35-25.jpg" />
       </div>
     </section> -->
+    <!--<section class="section fade-up">
+      <video class="fluid" controls>
+        <source src="https://youtu.be/k5dCF2wx8hQ?si=ifWNicfuiujSNTLb" type="video/mp4" >
+      </video>
+    </section>-->
+    <!-- 🎥 VIDEO SECTION -->
+    <section id="video" class="fade-up video-section">
+        <h2 class="video-title">Youtube Channel</h2>
+        <div class="video-wrapper">
+            <iframe 
+            src="https://www.youtube.com/embed/k5dCF2wx8hQ?si=ifWNicfuiujSNTLb&rel=0&autoplay=0&mute=0&showinfo=0&modestbranding=1"
+            title="Moses Peace Foundation Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+            </iframe>
+        </div>
 
+        <div class="video-text-content">
+            <a href="https://www.youtube.com/@MosesPeaceFoundation" target="_blank" style="text-decoration: none;">
+                <p class="video-description">Go To Youtube Channel </p>
+            </a>
+        </div>
+    </section>
     
     <!-- DONATION -->
     <section id="donate" class="section fade-up">
@@ -1536,9 +1623,9 @@
           <p>Stories of healing, faith, and transformation through honest conversations.</p>
         </div>
         <div class="card hover-lift">
-          <img src="graphics\Gemini_Generated1.png" alt="Women" />
-          <h3>Peace Talks - A Safe Haven Initiative</h3>
-          <p>Intimate talks, prayers, stories, and connections powered by the spirit of peace.</p>
+          <img src="graphics\peace talks.jpg" alt="peace talks" style="height: 100%;"/>
+          <!-- <h3>Peace Talks - A Safe Haven Initiative</h3>
+          <p>Intimate talks, prayers, stories, and connections powered by the spirit of peace.</p>-->
         </div>
       </div>
     </section>
@@ -1573,10 +1660,10 @@
     <section id="gallery" class="section fade-up">
       <h2>Moments from Our Work</h2>
       <div class="cards">
-        <div class="card hover-lift">
+    <!--<div class="card hover-lift">
           <img src="https://as1.ftcdn.net/v2/jpg/06/86/23/42/1000_F_686234292_iHl4ryLJXxWuVyGTeV8a3Qx56wxMChDq.jpg" alt="Gallery 1">
           <p>Empowering women through faith and counseling.</p>
-        </div>
+        </div> -->
         <div class="card hover-lift">
           <img src="graphics\beneath the flyover picture5.jpg" alt="Gallery 3">
       <!--<img src="https://www.togetherforgirls.org/_next/image?url=https%3A%2F%2Fcdn.togetherforgirls.org%2Fassets%2Fimages%2FLVCT-DREAMS-Kenya-march.JPG%3Fv%3D2023-11-09T17%3A35%3A23%2B00%3A00&w=1920&q=75" alt="Gallery 3">-->
