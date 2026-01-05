@@ -56,9 +56,8 @@ const teamMembers = [
     },
     socials: {
       facebook: "https://www.facebook.com/share/1Eyyw5fQwV/?mibextid=wwXIfr",
-      instagram: "https://www.instagram.com/iam_mosespeace",
       twitter: "https://x.com/iam_mosespeace?s=21",
-      youtube: "https://www.youtube.com/@Peacefuls_Corner"
+      linkedin: "https://www.linkedin.com/in/mosespeace?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",      
     }
   },
   {
