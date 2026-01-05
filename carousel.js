@@ -10,9 +10,8 @@ const teamMembers = [
     },
     socials: {
       facebook: "https://www.facebook.com/share/1Eyyw5fQwV/?mibextid=wwXIfr",
-      instagram: "https://www.instagram.com/iam_mosespeace",
       twitter: "https://x.com/iam_mosespeace?s=21",
-      youtube: "https://www.youtube.com/@Peacefuls_Corner"
+      linkedin: "https://www.linkedin.com/in/mosespeace?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",      
     }
   },
   {
@@ -151,6 +150,7 @@ function updateCarousel(newIndex) {
 		case "instagram": iconClass = "fab fa-instagram"; break;
 		case "twitter": iconClass = "fab fa-twitter"; break;
 		case "youtube": iconClass = "fab fa-youtube"; break;
+    case "linkedin": iconClass = "fab fa-linkedin"; break;
 		}
 		memberSocials.innerHTML += `<a href="${url}" target="_blank"><i class="${iconClass}"></i></a>`;
 	}
