@@ -30,19 +30,18 @@ const teamMembers = [
     }
   },
   {
-    name: "Chioma Esther Okafor",
-    role: "Project Coordinator",
+    name: "Moses Peace",
+    role: "Founder & Visionary",
     bio: {
       short:
-        "Chioma Esther Okafor is the Project Coordinator of our foundation. She oversees the planning, execution...",
+        "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with...",
       full:
-        "Chioma Esther Okafor is the Project Coordinator of our foundation. She oversees the planning, execution, and follow-up of our projects, ensuring every detail is handled with care and precision. Chioma works closely with the team and community partners to keep our initiatives on schedule and aligned with our mission. Her commitment, coordination skills, and passion for impact help bring each project to life from start to finish."
+        "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with a strong grasp of the social media landscape. She is the host of Peaceful’s Corner, a podcast dedicated to honest conversations around healing, growth, and emotional well-being. The Moses Peace Foundation is her way of giving back,a personal response to a journey she has lived through. Through it, she creates safe spaces for emotional healing, especially for women and girls navigating pain and brokenness."
     },
     socials: {
-      facebook: "https://www.facebook.com/share/1AqWTWzea4/?mibextid=wwXIfr",
-      instagram: "https://www.instagram.com/chi__oma_okafor?igsh=MTRxdHprYzNmamVoNA==",
-      twitter: "#",
-      youtube: "#"
+      facebook: "https://www.facebook.com/share/1Eyyw5fQwV/?mibextid=wwXIfr",
+      twitter: "https://x.com/iam_mosespeace?s=21",
+      linkedin: "https://www.linkedin.com/in/mosespeace?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",      
     }
   },
     {
@@ -61,18 +60,18 @@ const teamMembers = [
     }
   },
   {
-    name: "Pst Chioma Rufus",
-    role: "Counselor & Mentor",
+    name: "Moses Peace",
+    role: "Founder & Visionary",
     bio: {
-      short: "Pst Chioma Rufus is a trusted mentor and spiritual counselor to the founder of our foundation...",
+      short:
+        "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with...",
       full:
-        "Pst Chioma Rufus is a trusted mentor and spiritual counselor to the founder of our foundation. She is the Founder of Think Like A Queen and Lead Pastor of The LoveChannels Christian Center. She provides faith-based guidance and emotional support to women and youth dealing with pain, trauma, and rejection generally. Her wisdom, care, and voice of encouragement continue to shape lives and strengthen the heart behind our mission."
+        "Moses Peace is a Public Speaker, Prolific Writer, Podcaster, Project Manager and Media Personality with a strong grasp of the social media landscape. She is the host of Peaceful’s Corner, a podcast dedicated to honest conversations around healing, growth, and emotional well-being. The Moses Peace Foundation is her way of giving back,a personal response to a journey she has lived through. Through it, she creates safe spaces for emotional healing, especially for women and girls navigating pain and brokenness."
     },
     socials: {
-      facebook: "https://www.facebook.com/share/1AC7aT1Gqf/?mibextid=wwXIfr",
-      instagram: "https://www.instagram.com/officialchiomarufus?igsh=Ym9mN2c2M2xjOGd0",
-      twitter: "#",
-      youtube: "https://youtube.com/@officialchiomarufus?si=Cemc_GoY7GmM30kp"
+      facebook: "https://www.facebook.com/share/1Eyyw5fQwV/?mibextid=wwXIfr",
+      twitter: "https://x.com/iam_mosespeace?s=21",
+      linkedin: "https://www.linkedin.com/in/mosespeace?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",      
     }
   }
 ];
